@@ -1,4 +1,20 @@
+package leetcode;
+
 import java.util.Arrays;
+
+/*
+ * There are N children standing in a line. Each child is assigned a rating value.
+
+You are giving candies to these children subjected to the following requirements:
+
+Each child must have at least one candy.
+Children with a higher rating get more candies than their neighbors.
+What is the minimum candies you must give?
+
+ * NOTE, in the == case, there is no requirement, so the candy can start from 1, no comparison
+ * 
+ */
+
 
 public class Candy_Greedy {
 	// faster. two scans from left, then from right
