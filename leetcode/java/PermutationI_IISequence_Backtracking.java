@@ -137,7 +137,7 @@ Time ~ O(2N), Space ~ O(1)
         // find longest descending tail and reverse it, num[curr - 1] is the partition number
         int curr = num.length - 1;
         while (curr > 0 && num[curr - 1] >= num[curr])  curr--;
-        reverse(num, curr, num.length - 1);
+        nextPermutationReverse(num, curr, num.length - 1);
         // swap num[curr - 1] and the first larger element on its right side
         if (curr > 0) {
             int next = curr;
@@ -147,7 +147,7 @@ Time ~ O(2N), Space ~ O(1)
         }
     }
 
-    private void reverse(int[] num, int start, int end) {
+    private void nextPermutationReverse(int[] num, int start, int end) {
         while (start < end) {
             swap(num, start++, end--);
         }
