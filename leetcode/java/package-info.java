@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * @author Linda
- *
- */
-package leetcode;
-
